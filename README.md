@@ -350,96 +350,6 @@ Hasil tersebut dapat digunakan untuk membahas fitur yang paling berpengaruh terh
 
 Feature importance bukan bukti hubungan sebab-akibat dan dapat dipengaruhi oleh struktur dataset. Karena dataset pada proyek ini bersifat sintetis, hasil interpretasinya perlu diperlakukan sebagai hasil eksperimen, bukan kesimpulan mengenai faktor kebakaran di dunia nyata.
 
-## 📁 Struktur Repository
-
-Contoh struktur direktori GitHub:
-
-```text
-deteksi-dini-kebakaran-random-forest/
-│
-├── dataset/
-│   ├── dataset_dummy_deteksi_kebakaran_2000.csv
-│   ├── dataset_train_scaled.csv
-│   └── dataset_test_scaled.csv
-│
-├── notebooks/
-│   └── deteksi_kebakaran_random_forest.ipynb
-│
-├── models/
-│   └── random_forest_deteksi_kebakaran.pkl
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
-Struktur tersebut merupakan contoh organisasi repository. Sesuaikan nama dan lokasi berkas dengan file yang benar-benar tersedia.
-
-## ⚙️ Instalasi dan Cara Menjalankan
-
-### 1. Clone repository
-
-```bash
-git clone https://github.com/USERNAME/REPOSITORY.git
-cd REPOSITORY
-```
-
-Ganti `USERNAME` dan `REPOSITORY` dengan informasi repository milikmu.
-
-### 2. Buat virtual environment (opsional)
-
-```bash
-python -m venv .venv
-```
-
-Aktivasi pada Windows PowerShell:
-
-```powershell
-.\.venv\Scripts\Activate.ps1
-```
-
-### 3. Instal dependensi
-
-```bash
-pip install -r requirements.txt
-```
-
-Contoh isi `requirements.txt`:
-
-```text
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-joblib
-jupyterlab
-```
-
-### 4. Jalankan JupyterLab
-
-```bash
-jupyter lab
-```
-
-Buka notebook pada direktori `notebooks/`, kemudian jalankan sel sesuai urutan pipeline.
-
-### 5. Gunakan model yang telah disimpan
-
-Pastikan file `.pkl` tersedia di direktori `models/` atau sesuaikan path pada kode pemuatan model.
-
-## 🔐 Catatan Dataset dan Validasi
-
-Proyek ini menggunakan dataset dummy sintetis untuk menguji implementasi pipeline Machine Learning. Data tersebut tidak berasal dari pengukuran langsung sensor MQ-2, DHT22, maupun hasil inferensi kamera YOLOv8 secara real-time.
-
-Oleh karena itu:
-
-- Nilai evaluasi model hanya menggambarkan performa pada dataset pengujian yang digunakan.
-- Model belum dapat dinyatakan siap digunakan sebagai sistem keselamatan kebakaran.
-- Dataset nyata perlu dikumpulkan dari kondisi normal, peringatan, dan kebakaran yang representatif.
-- Integrasi sensor dan kamera perlu mempertimbangkan sinkronisasi data, noise, kegagalan sensor, dan ambang keputusan.
-- Pengujian lapangan serta mekanisme alarm yang andal diperlukan sebelum penerapan operasional.
-
 ## 🚀 Pengembangan Selanjutnya
 
 Beberapa pengembangan yang dapat dilakukan:
@@ -456,11 +366,6 @@ Beberapa pengembangan yang dapat dilakukan:
 ## 👨‍💻 Kontributor
 
 **Revansyah Armadito**
-
-Proyek Ujian Tengah Semester (UTS) Machine Learning.
+**Novia Latifatuzia**
 
 Fokus: Supervised Learning, Random Forest Classification, Multimodal Sensor Fusion, dan deteksi dini kebakaran.
-
----
-
-*Dokumentasi ini menjelaskan implementasi eksperimen Machine Learning dan rancangan pengembangan sistem deteksi dini kebakaran. Status implementasi setiap komponen perlu disesuaikan dengan hasil pengerjaan aktual.*
