@@ -365,7 +365,7 @@ Beberapa pengembangan yang dapat dilakukan:
 
 ## 👨‍💻 Kontributor
 
-**Revansyah Armadito**
+**Revansyah Armadito,**
 **Novia Latifatuzia**
 
 Fokus: Supervised Learning, Random Forest Classification, Multimodal Sensor Fusion, dan deteksi dini kebakaran.
